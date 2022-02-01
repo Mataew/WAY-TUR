@@ -36,7 +36,7 @@ export const getUsers = () => {
   return async (dispatch) => {
     dispatch({type: "users/loading/pending"})
     try {
-      const response = await fetch("http://localhost:7000/users")
+      const response = await fetch("/users")
       const users = await response.json()
       dispatch({type: "users/loading/fulfilled", payload: users})
     } catch (e) {
@@ -48,7 +48,7 @@ export const getUsers = () => {
 export const deleteUser = (id) => {
   return async (dispatch) => {
     try {
-      await fetch(`http://localhost:7000/user/${id}`, { method: 'DELETE' })
+      await fetch(`/user/${id}`, { method: 'DELETE' })
       dispatch({type: "users/delete/fulfilled", payload: id})
     } catch (e) {
       console.log(e)
@@ -65,7 +65,7 @@ export const addAdminUser = (id) => {
       body: ' { "role": "admin" } '
     }
     try {
-      await fetch(`http://localhost:7000/adminLord/${id}`, option )
+      await fetch(`/adminLord/${id}`, option )
     } catch (e) {
       console.log(e)
     }

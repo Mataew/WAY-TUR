@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "proxy": "http://localhost:7000",
   "scripts": {
     "server": "nodemon index.js",
     "client": "cd ./client && npm start",
