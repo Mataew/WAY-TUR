@@ -152,7 +152,7 @@ const Search = () => {
               <div className={styles.tours_cards_wrapper}>
                 <img
                   className={styles.tur_img}
-                  src={`http://localhost:7000/${item.img}`}
+                  src={`/${item.img}`}
                   alt="daun"
                 />
               </div>

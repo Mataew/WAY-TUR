@@ -80,7 +80,7 @@ export const deleteAdminUser = (id) => {
       body: ' { "role": "User" } '
     }
     try {
-      await fetch(`http://localhost:7000/adminLord/${id}`, option )
+      await fetch(`/adminLord/${id}`, option )
     } catch (e) {
       console.log(e)
     }

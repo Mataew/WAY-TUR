@@ -51,7 +51,7 @@ export default function profReducer (state = initialState, action) {
 export const userLoad = (token) => {
   return async (dispatch) => {
     try {
-      const response = await fetch(`http://localhost:7000/user`, {
+      const response = await fetch(`/user`, {
         method: "GET",
         headers: { Authorization: `Bearer ${token}` },
       });
@@ -66,7 +66,7 @@ export const userLoad = (token) => {
 export const BuyTur = (tur) => {
   return async (dispatch) => {
     try {
-    const response = await fetch("http://localhost:7000/cartToken", {
+    const response = await fetch("/cartToken", {
       method: "POST",
       body: JSON.stringify({ tur }),
       headers: {
@@ -86,7 +86,7 @@ export const BuyTur = (tur) => {
 export const onlyUser = (token) => {
   return async (dispatch) => {
     try {
-      const response = await fetch(`http://localhost:7000/user`, {
+      const response = await fetch(`/user`, {
         method: "GET",
         headers: { Authorization: `Bearer ${token}` },
       });
@@ -101,7 +101,7 @@ export const onlyUser = (token) => {
 export const cartLoad = () => {
   return async (dispatch) => {
 try {
-  const response = await fetch("http://localhost:7000/cart", {
+  const response = await fetch("/cart", {
     method: "GET",
     headers: {
       "Content-type": "application/json",
@@ -121,7 +121,7 @@ export const deleteCart = (id) => {
   return async (dispatch) => {
     dispatch({ type: "cart/delete/pending" });
     try {
-      await fetch(`http://localhost:7000/cart/${id}`, {
+      await fetch(`/cart/${id}`, {
         method: "DELETE",
         headers: {
           Authorization: "Bearer " + localStorage.getItem("token"),

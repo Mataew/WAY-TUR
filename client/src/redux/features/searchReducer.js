@@ -47,7 +47,7 @@ export const GetTurs = () => {
   return async (dispatch) => {
     dispatch({type: "turs/Loading/pending"})
     try {
-      const responce = await fetch("http://localhost:7000/turs")
+      const responce = await fetch("/turs")
       const turs = await responce.json()
 
       dispatch({type: "turs/Loading/fulfilled", payload: turs})
@@ -61,7 +61,7 @@ export const deleteTour = (id) => {
   return async (dispatch) => {
     dispatch({type: "turs/delete/pending"})
     try {
-      const deleteTour = await fetch(`http://localhost:7000/turs/${id}`, { method: "DELETE"})
+      const deleteTour = await fetch(`/turs/${id}`, { method: "DELETE"})
       const tour = await deleteTour.json()
 
       dispatch({type: "turs/delete/fulfilled", payload: tour})
@@ -85,7 +85,7 @@ export const updateTours = (id, inputFrom, inputTo, inputPrice) => {
       })
     }
     try {
-      await fetch(`http://localhost:7000/turs/${id}`, options)
+      await fetch(`/turs/${id}`, options)
       dispatch({ type: 'tours/patch/fulfilled', payload: { id, inputFrom, inputTo, inputPrice } })
     } catch (e) {
       console.log(e)
@@ -111,7 +111,7 @@ export const postTour = (from, to, data, night, amount, hotel, price, image) => 
       })
     }
     try {
-      const response = await fetch(`http://localhost:7000/turs`, postOptions)
+      const response = await fetch(`/turs`, postOptions)
       const tour = await response.json()
 
       const formData = new FormData()
@@ -121,7 +121,7 @@ export const postTour = (from, to, data, night, amount, hotel, price, image) => 
         method: "PATCH",
         body: formData
       }
-      await fetch(`http://localhost:7000/turs/${tour._id}/avatar`, patchOption)
+      await fetch(`/turs/${tour._id}/avatar`, patchOption)
 
     } catch (e) {
       console.log(e)

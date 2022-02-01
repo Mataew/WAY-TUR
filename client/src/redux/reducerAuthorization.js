@@ -66,7 +66,7 @@ export const createUser = (login, password, firstName, lastName) => {
   return async (dispatch) => {
     dispatch({ type: "application/signup/pending" });
 
-    const responseRegister = await fetch("http://localhost:7000/users", {
+    const responseRegister = await fetch("/users", {
       method: "POST",
       body: JSON.stringify({ login, password, firstName, lastName }),
       headers: {
@@ -93,7 +93,7 @@ export const authUser = (login, password) => {
     console.log(login, password)
     dispatch({ type: "application/signin/pending" });
 
-    const response = await fetch("http://localhost:7000/login", {
+    const response = await fetch("/login", {
       method: "POST",
       body: JSON.stringify({ login, password }),
       headers: {

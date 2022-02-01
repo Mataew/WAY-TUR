@@ -19,7 +19,7 @@ export default function hotelsReducer (state = initialState, action) {
 export const hotelsLoad = () => {
   return async (dispatch) => {
     try {
-      const response = await fetch("http://localhost:7000/hotels");
+      const response = await fetch("/hotels");
       const hotels = await response.json()
       dispatch({type: "hotels/load/fulfilled", payload: hotels})
     } catch (error) {
