@@ -1,0 +1,105 @@
+.admin_tours_wrapper{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 5px;
+}
+.tours_cards_wrapper{
+  width: 30%;
+  height: 200px;
+  margin-bottom: 20px;
+  position: relative;
+  box-shadow: 0 0 4px 0 black;
+}
+.tours_cards_wrapper img{
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.tours_cards_title{
+  position: absolute;
+  bottom: 24%;
+  font-size: 25px;
+  color: white;
+  padding: 10px 30px;
+  width: 100%;
+  background-color: #40B0DF;
+}
+
+.hover_display{
+  width: 100%;
+  background-color: rgba(255, 213, 61, 0.76);
+  bottom: 13%;
+  color: white;
+  font-family: Gilroy;
+  padding: 20px;
+  text-align: left;
+  font-size: 17px;
+  position: absolute;
+  opacity: 0;
+}
+
+.tours_cards_wrapper:hover .hover_display{
+  opacity: 1;
+  transition-duration: 1s;
+  bottom: 17.3%;
+}
+.tours_cards_wrapper:hover .tours_cards_title{
+  opacity: 0;
+  transition: 1s;
+}
+
+.delete_tour{
+  border: none;
+  background-color: #ca2129;
+  color: white;
+  padding: 5px 15px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.update_input{
+  border: 1px solid #40B0DF;
+  font-size: 17px;
+  -moz-appearance: textfield;
+  width: 100%;
+  background-color: rgba(64, 176, 223, 0.63);
+}
+.update_input::-webkit-inner-spin-button {
+  display: none;
+}
+
+
+/*  блок добавлени тура   */
+.add_tour{
+  width: 30%;
+  height: 200px;
+  background-color: rgba(128, 128, 128, 0.23);
+  padding-top: 1%;
+  border: 1px solid black;
+}
+.add_tour a{
+  text-decoration: none;
+  color: black;
+  font-size: 150px;
+}
+.add_tour:hover{
+  background-color: rgba(128, 128, 128, 0.46);
+  transition: 0.5s;
+}
+
+.add_tour_inputs input::-webkit-outer-spin-button, input::-webkit-inner-spin-button{
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.update_button{
+  background-color: #15ca47;
+  border: none;
+  color: white;
+  padding: 5px 15px;
+  cursor: pointer;
+  font-size: 15px;
+  margin-right: 10px;
+  margin-top: 5px;
+}

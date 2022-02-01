@@ -1,0 +1,86 @@
+.container {
+  width: 100%;
+  margin: auto;
+  background-image: url("../../../assets/fon_gori.jpg");
+  padding: 50px 0px;
+}
+.menu {
+  margin: 0;
+  padding: 0;
+}
+.container_photo{
+  width: 90%;
+  margin: auto;
+}
+.container_photo h1{
+  color: #FFD53D;
+}
+.nav {
+  display: flex;
+  width: 135px;
+  justify-content: space-between;
+  font-size: 13px;
+  padding: 0;
+}
+.link {
+  color: grey;
+  text-decoration: none;
+  font-weight: bold;
+}
+.link:hover {
+  border-bottom: 1px solid gray;
+  border-color: inherit ;
+}
+.nav__item {
+  list-style: none;
+}
+.text__color {
+  color: #f5c414;
+}
+.text__block {
+  padding: 15px;
+  background-color: rgba(211, 211, 211, 0.31);
+  border-radius: 5px;
+  width: 600px;
+}
+
+.text__block p{
+  color: white;
+}
+.wrapper {
+  display: flex;
+}
+
+.img_wrap {
+  width: 900px;
+}
+img {
+  display: block;
+  width: 100%;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  width: 900px;
+  margin: auto;
+  padding-top: 100px;
+}
+.content p{
+  color: white;
+}
+.content_text {
+  padding-top: 50px;
+  padding-right: 20px;
+  width: 450px;
+}
+.content_img {
+  width: 450px;
+}
+.content_title {
+  font-size: 40px;
+  font-weight: bold;
+  color: #FFD53D;
+}
+
+

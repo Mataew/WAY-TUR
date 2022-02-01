@@ -1,0 +1,121 @@
+.mainBlock {
+  background-image: url("../../../assets/fon_gori.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 -250px;
+  width: 100%;
+  padding: 50px 0 300px;
+  margin-bottom: -17%;
+}
+
+.mainBlock h1 {
+    color: rgb(255, 213, 61);
+}
+
+.mainBlock p {
+    color: white;
+}
+
+.contactUs {
+  width: 1200px;
+  margin: 100px auto;
+  display: flex;
+  justify-content: space-between;
+  color: rgb(255, 213, 61);
+}
+
+.mainBlock p {
+  color: white;
+}
+
+.contactUs {
+  width: 80%;
+  margin: 100px auto;
+  display: flex;
+
+  align-items: center;
+}
+
+.contactUsText {
+  width: 450px;
+}
+
+.contactUsText h1 {
+  font-size: 45px;
+  margin-bottom: 20px;
+}
+
+.contactUsText p {
+  font-size: 20px;
+}
+
+.contactUsFirstImage {
+  width: 350px;
+  height: 500px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  margin-left: 15%;
+  margin-right: 2%;
+}
+
+.contactUsFirstImage img {
+  max-width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.contactUsSecondImage {
+  width: 350px;
+  margin-top: -70px;
+  height: 500px;
+  position: relative;
+  overflow: hidden;
+}
+
+.contactUsSecondImage img {
+  max-width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.findUs {
+  width: 90%;
+  margin: 100px auto;
+  display: flex;
+  justify-content: space-around;
+  padding: 50px 40px;
+}
+
+.findUsAdress {
+  width: 30%;
+  font-size: 20px;
+}
+
+.findUsAdress h1 {
+  margin-bottom: 30px;
+  width: 120%;
+}
+
+.findUsAdress p {
+  margin-bottom: 30px;
+}
+
+.findUsGetInTouch {
+  font-size: 20px;
+}
+
+.findUsGetInTouch p {
+  text-align: right;
+  margin-top: 30px;
+}
+
+.map iframe {
+  width: 100%;
+  height: 450px;
+}
+
+.map {
+  margin: auto;
+  width: 100%;
+}

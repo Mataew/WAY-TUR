@@ -1,0 +1,119 @@
+.tours_main {
+  background-image: url("../../../assets/fon_gori.jpg");
+  background-repeat: no-repeat;
+  background-position: 0 -250px;
+  width: 100%;
+  padding: 50px 0;
+}
+
+.tours_main h1 {
+  color: rgb(255, 213, 61);
+}
+
+.tours_wrapper {
+  margin: 10px auto 100px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 90%;
+  padding: 50px 0;
+}
+
+.tours_cards_wrapper {
+  width: 400px;
+  height: 200px;
+  margin-top: 70px;
+  position: relative;
+  overflow: hidden;
+  transition: 0.6s;
+}
+.tours_cards_wrapper img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  transition: 0.6s;
+}
+
+.tours_cards_wrapper:hover img {
+  width: 120%;
+  height: 120%;
+  overflow: hidden;
+}
+
+.transition {
+  transition: 0.3s;
+}
+
+.tours_cards_title {
+  position: relative;
+  bottom: 35%;
+  font-size: 25px;
+  color: white;
+  padding: 10px 30px;
+  width: 100%;
+  /* background-color: #40B0DF; */
+  background-color: rgba(255, 213, 61, 0.76);
+}
+
+.hover_display {
+  width: 100%;
+  height: 120px;
+  /* background-color: rgba(255, 213, 61, 0.76); */
+  background-color: #40b0df;
+  bottom: -5%;
+  color: white;
+  font-family: Gilroy;
+  padding: 20px;
+  text-align: left;
+  font-size: 17px;
+  position: absolute;
+  opacity: 0;
+  transition: 0.6s;
+}
+
+.tours_cards_wrapper:hover .hover_display {
+  opacity: 0.9;
+  transition-duration: 0.6s;
+  bottom: 0%;
+}
+.tours_cards_wrapper:hover .tours_cards_title {
+  opacity: 0;
+  transition: 0.3s;
+}
+
+
+.delete_tour {
+  border: none;
+  background-color: #ca2129;
+  color: white;
+  padding: 5px 15px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.update_input {
+  border: 1px solid #40b0df;
+  font-size: 17px;
+  -moz-appearance: textfield;
+  width: 100%;
+  background-color: rgba(64, 176, 223, 0.63);
+}
+.update_input::-webkit-inner-spin-button {
+  display: none;
+}
+
+.tours_map_img {
+  width: 1000px;
+  margin: auto;
+  text-align: center;
+}
+
+.tours_map_img h1 {
+  margin-bottom: 70px;
+}
+
+.tours_best_offers {
+  text-align: center;
+  margin: 50px 0 80px 0;
+}
+

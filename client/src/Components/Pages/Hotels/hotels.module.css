@@ -1,0 +1,98 @@
+.block_Turimg {
+    width: 800px;
+    height: 600px;
+}
+.block_hotelInfo {
+    background-color: #0067B3;
+    width: 400px;
+    height: 600px;
+}
+.container {
+    display: flex;
+    background-color: #0067B3;
+}
+.block_hotelimg {
+    border: 2px solid black;
+    width: 250px;
+    height: 150px;
+}
+.cart {
+    margin: auto;
+    display: flex;
+    border: 2px solid black;
+}
+.hotel_cart {
+    margin-left: 85px;
+}
+.price {
+    margin-top: 25px;
+    margin-left: 50px;
+}
+.addToCart {
+    margin-left: 40px;
+    width: 150px;
+    height: 50px;
+    font-size: 25px;
+}
+.addToCart:hover {
+    background-color: #ffd53d;
+}
+.block_Turimg {
+  width: 800px;
+  height: 600px;
+}
+.block_hotelInfo {
+  background-color: #0068b3ab;
+  width: 400px;
+  height: 600px;
+}
+.container {
+  display: flex;
+  background-image: url("../../../assets/fon_gori.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 -250px;
+  padding: 50px 0;
+  color: white;
+}
+.block_hotelimg {
+  border-radius: 10px;
+  width: 250px;
+  height: 150px;
+}
+.cart {
+  margin: auto;
+  display: flex;
+}
+.hotel_cart {
+  margin-left: 85px;
+}
+.price {
+  margin-top: 25px;
+  margin-left: 50px;
+}
+.addToCart {
+  text-decoration: none;
+  margin-left: 50px;
+  font-size: 25px;
+  color: #ffd53d;
+  border-radius: 10px;
+  padding: 10px;
+  transition: .3s;
+}
+.addToCart:hover {
+  background-color: #ffd53d;
+  border-radius: 10px;
+  color: #0068b3ab;
+}
+
+.addToCart_dis {
+  text-decoration: none;
+  margin-left: 50px;
+  font-size: 25px;
+  color: #ffd53d;
+  border-radius: 10px;
+  padding: 10px;
+  transition: .3s;
+  cursor: default;
+}

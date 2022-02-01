@@ -1,0 +1,78 @@
+.admin_users{
+  width: 100%;
+  margin: auto;
+}
+
+.info_title{
+  display: flex;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  justify-content: space-around;
+  font-size: 25px;
+  color: white;
+  background-color: #FFD53D;
+  padding: 10px;
+}
+
+.login_title{
+  flex: 2;
+}
+.firstName_title{
+  flex: 2;
+}
+.lastName_title{
+  flex: 2;
+}
+.do_admin_title{
+  flex: 2;
+}
+.delete_title{
+  flex: 1;
+}
+
+
+
+.info{
+  display: flex;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  justify-content: space-around;
+  font-size: 25px;
+  margin-top: 10px;
+}
+.login{
+  flex: 2;
+}
+.firstName{
+  flex: 2;
+}
+.lastName{
+  flex: 2;
+}
+.do_admin{
+  flex: 2;
+}
+.delete{
+  flex: 1;
+}
+
+.added_admin{
+  position: fixed;
+  left: 75%;
+  bottom: 5%;
+  background-color: rgba(76, 202, 42, 0.78);
+  color: white;
+  border-radius: 40px;
+  padding: 20px;
+}
+.delete_admin{
+  position: fixed;
+  left: 75%;
+  bottom: 5%;
+  background-color: rgba(248, 0, 3, 0.52);
+  color: white;
+  border-radius: 40px;
+  padding: 20px;
+}

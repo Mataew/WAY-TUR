@@ -1,0 +1,129 @@
+.search_main{
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  padding-top: 50px;
+}
+.Search_main_Block{
+  display: flex;
+  justify-content: space-between;
+  width: 95%;
+  margin: auto;
+  align-items: center;
+}
+.search_input{
+  background-color: #0067B3;
+  width: 82%;
+  padding: 5px 27px 27px 27px;
+  /*margin: auto;*/
+  border-radius: 25px;
+}
+.titles{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin: auto;
+  text-align: left;
+  color: white;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+.search_titleTwo, .search_titleThree{
+  width: 20%;
+  padding-left: 10px;
+}
+.search_titleFour, .search_titleFive, .search_titleSix{
+  width: 13%;
+  text-align: center;
+}
+
+.search_inp{
+  display: flex;
+  width: 100%;
+  margin: auto;
+  justify-content: space-between;
+}
+.search_inputTwo, .search_inputThree{
+  width: 20%;
+}
+.search_inputFour, .search_inputFive, .search_inputSix{
+  width: 13%;
+  text-align: center;
+}
+.search_inp input{
+  /*height: 25px;*/
+  padding: 8px 8px;
+  font-size: 14px;
+  border-radius: 10px;
+  border: none;
+}
+.Search_btn_block{
+  width: 16%;
+}
+.search_btn{
+  border: none;
+  background-color: white;
+  color: #0067B3;
+  border-radius: 10px;
+  font-size: 21px;
+  width: 100%;
+  padding: 20px 40px;
+}
+.search_btn h1{
+  margin: 0;
+}
+
+.tur_name{
+  display: flex;
+  justify-content: space-between;
+  width: 95%;
+  margin: auto;
+  margin-top: 50px;
+  flex-wrap: wrap;
+}
+.search_imgBlock{
+  height: 200px;
+  border-radius: 5px;
+  margin-bottom: 30px;
+}
+
+.tours_cards_wrapper{
+  width: 400px;
+  height: 200px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 7px 0px black;
+  position: relative;
+}
+.tur_img{
+  width: 100%;
+  height: 100%;
+  border-radius: 5px
+}
+
+.absolute_display{
+  position: relative;
+  width: 100%;
+  bottom: 60%;
+  z-index: 20;
+  background-color: rgba(255, 213, 61, 0.89);
+  transition: 1s all;
+
+}
+
+
+
+
+.absolute_display_link {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  height: 100%;
+  display: block;
+  line-height: 50px;
+}
+.absolute_display_link:hover {
+  font-size: 40px;
+  transition: 1s all;
+  color: white;
+}

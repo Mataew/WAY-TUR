@@ -1,0 +1,69 @@
+.admin_wrapper_profile{
+  width: 45%;
+  text-align: center;
+  margin: auto;
+  margin-top: 1%;
+}
+.admin_profile_img{
+  width: 200px;
+  height: 200px;
+  border-radius: 150px;
+  border: 3px solid #FFD53D;
+  margin: auto;
+  background-color: #FFD53D;
+  text-align: center;
+}
+.admin_name{
+  font-family: Gilroy;
+  font-size: 45px;
+  font-weight: bold;
+  color: #40B0DF;
+}
+
+.admin_nav{
+  display: flex;
+  list-style: none;
+  width: 100%;
+  margin: auto;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  color: #FFD53D;
+  font-size: 23px;
+  font-family: Gilroy;
+  font-weight: bold;
+  background-color: #40B0DF;
+  padding: 10px 15px;
+  justify-content: space-around;
+}
+.admin_nav li{
+  border-left: 4px solid #FFD53D;
+  border-right: 4px solid #FFD53D;
+  padding: 5px 10px;
+}
+.admin_nav li:hover{
+  background-color: #FFD53D;
+  color: white;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.back{
+  margin-top: 10px;
+  background-color: #40B0DF;
+  padding: 10px;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 300px 10px 400px;
+}
+.back a{
+  text-decoration: none;
+  color: #FFD53D;
+  font-weight: bold;
+  font-family: Gilroy;
+}
+
+.admin_nav a{
+  text-decoration: none;
+  color: white;
+}

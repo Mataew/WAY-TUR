@@ -1,0 +1,111 @@
+* {
+  box-sizing: border-box;
+}
+
+.Profile__wrapper {
+padding: 10px;
+width: 1000px;
+margin: auto;
+}
+
+.Profile__wrapper__profBlock__img {
+  width: 200px;
+  margin: auto;
+}
+
+.Profile__wrapper__profBlock {
+  text-align: center;
+  width: 250px;
+  margin: auto;
+  padding: 15px;
+}
+
+.Profile__wrapper__profBlock__img img {
+}
+
+.Profile__wrapper__profBlock__name {
+}
+
+.Profile__wrapper__profBlock__email {
+}
+
+.Profile__wrapper__scroll__title {
+  padding-bottom: 50px;
+  padding-left: 10px;
+}
+
+.Profile__wrapper__scroll__order {
+}
+
+.Profile__wrapper__logOut a {
+  border: 1px solid black;
+  padding: 5px;
+  text-decoration: none;
+  color: black;
+}
+
+.Profile__wrapper__logOut {
+  padding-top: 10px;
+  justify-content: center;
+  display: flex;
+  margin: auto;
+  margin: 50px 0;
+}
+
+.Profile__wrapper__logOut a:hover {
+  color: white;
+  background-color: black;
+  transition: 0.4s;
+}
+
+.Profile__wrapper__exit {
+}
+
+.Profile__bg {
+}
+
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+
+
+
+
+
+
+.cart {
+  margin: auto;
+  display: flex;
+  border: 2px solid black;
+}
+.hotel_cart {
+  margin-left: 85px;
+}
+.price {
+  margin-top: 25px;
+  margin-left: 50px;
+}
+
+.block_Turimg {
+width: 800px;
+height: 600px;
+}
+.block_hotelInfo {
+background-color: #0068b3ab;
+width: 400px;
+height: 600px;
+}
+.container {
+  display: flex;
+  width: 100%;
+  padding: 50px 0;
+  color: white;
+}
+.block_hotelimg {
+border-radius: 10px;
+width: 250px;
+height: 150px;
+}
