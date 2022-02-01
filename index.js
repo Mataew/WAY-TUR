@@ -3,7 +3,7 @@ const mongoose = require("mongoose");
 const cors = require("cors");
 const path = require("path");
 const app = express();
-const port = 7000;
+const port = process.env.PORT;
 require("dotenv").config();
 
 app.use(cors());
@@ -17,9 +17,7 @@ app.get('*', (req,res) => {
 })
 
 const connect = async () => {
-  await mongoose.connect(
-    "mongodb+srv://tamerlan:raduev@cluster0.14x5g.mongodb.net/TravelAgency"
-  );
+  await mongoose.connect(process.env.SERVER_MONGO);
   console.log("Соединение успешно установлено");
 
   app.listen(port, () => {
