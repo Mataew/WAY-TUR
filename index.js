@@ -13,7 +13,7 @@ app.use(require("./routes/index"));
 
 app.use(express.static(path.resolve(__dirname, 'client', 'build')))
 app.get('*', (req,res) => {
-  res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'))
+  res.sendFile(path.resolve(__dirname, 'client', 'src', 'index.js'))
 })
 
 const connect = async () => {
