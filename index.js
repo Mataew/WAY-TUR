@@ -3,7 +3,6 @@ const mongoose = require("mongoose");
 const cors = require("cors");
 const path = require("path");
 const app = express();
-const port = process.env.PORT;
 require("dotenv").config();
 
 app.use(cors());
@@ -20,8 +19,8 @@ const connect = async () => {
   await mongoose.connect(process.env.SERVER_MONGO);
   console.log("Соединение успешно установлено");
 
-  app.listen(port, () => {
-    console.log(`Server has been started on port http://localhost:${port}`);
+  app.listen(process.env.PORT, () => {
+    console.log(`Server has been started on port http://localhost:${process.env.PORT}`);
   });
 };
 
