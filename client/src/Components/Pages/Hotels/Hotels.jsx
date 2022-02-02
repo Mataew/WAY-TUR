@@ -59,7 +59,7 @@ const Hotels = () => {
                 <div className={styles.container}>
                   <div className={styles.cart}>
                   <div className={styles.block_Turimg}>
-                    <img src={`http://localhost:7000/${el.img}`} alt="" />
+                    <img src={`/${el.img}`} alt="" />
                   </div>
                   <div className={styles.block_hotelInfo}>
                     <div className={styles.hotel_cart}>
@@ -71,7 +71,7 @@ const Hotels = () => {
                     <h4>Рейтинг: {star}</h4>
                     <h4>Название Отеля: {el.hotel.name}</h4>
                     <div className={styles.block_hotelimg}>
-                    <img src={`http://localhost:7000/${el.hotel.img}`} alt="" />
+                    <img src={`/${el.hotel.img}`} alt="" />
                     </div>
                     <h2 className={styles.price}>Цена: {el.price}</h2>
                     <Link to={cart ? '' : !token ? '/authorization' : '/profile'} onClick={ cart ? '' : () => BuyTurs(el._id)} className={ cart ? styles.addToCart_dis : styles.addToCart}>{ cart ? 'Забронировано' : 'Забронировать'}</Link>

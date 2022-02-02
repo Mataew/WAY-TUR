@@ -30,7 +30,7 @@ export const GetByTur = (id) => {
         dispatch({type: "tur/Loading/pending"})
         try {
             console.log(id)
-        const responce = await fetch(`http://localhost:7000/tur/${id}`)
+        const responce = await fetch(`/tur/${id}`)
         const tur = await responce.json()
         dispatch({type: "tur/Loading/fulfilled", payload: tur})
         } catch (e) {

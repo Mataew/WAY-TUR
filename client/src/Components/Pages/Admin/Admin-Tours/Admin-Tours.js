@@ -53,7 +53,7 @@ const AdminTours = () => {
       { tours.map((item) => {
         return (
           <div className={ styles.tours_cards_wrapper }>
-            <img src={`http://localhost:7000/${item.img}`}  alt="daun"/>
+            <img src={`/${item.img}`}  alt="daun"/>
             <h3 className={ styles.tours_cards_title}>{item.to}</h3>
             <div className={ styles.hover_display }>
               <div>ОТКУДА: { handleInput ? <input value={ inputFrom } onChange={ (e) => inputFromChange(e)} type='text' className={ styles.update_input}/> :  item.from }</div>
