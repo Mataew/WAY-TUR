@@ -80,6 +80,7 @@ img {
   margin: auto;
   display: flex;
   border: 2px solid black;
+  width: 100%;
 }
 .hotel_cart {
   margin-left: 85px;

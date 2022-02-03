@@ -13,7 +13,7 @@ const Slider = () => {
         <h1 className={ styles.title_slider }>НАЧНИТЕ ПОКОРЯТЬ МИР <br/> ВМЕСТЕ С НАМИ</h1>
         <h2 className={ styles.title2_slide }>Направление выбирать вам</h2>
       </div>
-      <Carousel transitionTime={ 1500 } dynamicHeight={ 600 } autoPlay={ true } interval={ 2500 } showArrows={ false} infiniteLoop={ true } showThumbs={ false } showIndicators={ false } showStatus={ false } className={ styles.slider_wrapper }>
+      <Carousel transitionTime={ 1500 } dynamicHeight={ 600 } autoPlay={ true } interval={ 2000 } showArrows={ false} infiniteLoop={ true } showThumbs={ false } showIndicators={ false } showStatus={ false } className={ styles.slider_wrapper }>
         <img className={ styles.slider_img } src={ slide1 } alt="da"/>
         <img className={ styles.slider_img } src={ slide2 } alt="da"/>
         <img className={ styles.slider_img } src={ slide3 } alt="da"/>
